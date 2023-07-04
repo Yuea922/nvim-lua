@@ -1,0 +1,61 @@
+snippet cm "Comment Section"
+/** 
+ * ${0} 
+ */
+endsnippet
+
+snippet ct "cout"
+std::cout << "${0:${VISUAL}}" << std::endl;
+endsnippet
+
+snippet todo "TODO"
+// TODO: <`date +%F` `!v snips_author`>
+endsnippet
+
+snippet cr "created" 
+//
+// Created by `!v snips_author` on `date +%Y/%m/%d`
+// 
+endsnippet
+
+snippet define "function define" 
+#ifndef ${0:${VISUAL}}
+#define ${0:${VISUAL}}
+
+#endif //${0:${VISUAL}}
+endsnippet
+
+snippet fi "for loop by indexes" 
+for (int ${1:start} = 0; ${1:start} < ${2:end}; ++${1:start}) 
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet fr "for loop by range"
+for (auto& ${1} : ${2:range}) 
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet if "if"
+if (${1:condition})
+{
+	${0:${VISUAL}}
+}	
+endsnippet
+
+snippet elseif "elseif"
+else if (${1:condition}) 
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet else "else"
+else 
+{
+	${0:${VISUAL}}
+}
+endsnippet
